@@ -13,9 +13,7 @@ git status
 git add .
 GREEN='\033[32m'
 RESET='\033[0m'
-#read -p "$(echo -e ${GREEN}Enter your comment: ${RESET})" cmt
 echo -e "${GREEN}Enter your comment: ${RESET}"
-#read -p cmt
 read -r cmt
 git commit -m "$cmt"
 git push
